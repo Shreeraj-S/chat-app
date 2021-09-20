@@ -1,0 +1,181 @@
+body{
+    margin: 0;
+    padding: 0;
+    font-family: tahoma;
+}
+hr{
+    margin: 0;
+}
+header{
+    background-color: rgb(31, 31, 31);
+    text-align: center;
+    display: flex;
+    justify-content: space-between;
+    position: relative;
+}
+header .hamburger-menu{
+    color: white;
+    font-size: 18px;
+    margin: 16px 10px;
+    z-index: 1;
+    cursor: pointer;
+}
+header h1{
+    flex-grow: 1;
+    padding: 7px;
+    margin: 0;
+    color: white;
+    display: inline-block;
+}
+.choose-room{
+    position: absolute;
+    margin: 0;
+    padding: 16px 72px;
+    font-size: 20px;
+    color: white;
+    background-color: rgb(68, 68, 68);
+    font-weight: bold;
+    border-bottom: 0.4px solid rgb(185, 185, 185);
+    display: none;
+}
+.choose-room.active{
+    display: block;
+}
+sidebar{
+    background-color: rgb(68, 68, 68);
+}
+sidebar ul{
+    position: absolute;
+    margin: 0;
+    padding: 0;
+    width: 280px;
+    background-color: rgb(68, 68, 68);
+    height: 100vh;
+    list-style: none;
+    display: none;
+}
+sidebar ul.active{
+    display: block;
+}
+sidebar li{
+    color: white;
+    padding: 5px 30px;
+    font-size: 18px;
+    border-bottom: 0.4px solid rgb(185, 185, 185);
+    cursor: pointer;
+}
+sidebar li.active{
+    background-color: rgb(31, 31, 31);
+    color: rgb(233, 233, 233);
+}
+sidebar li:hover{
+    background-color: rgb(126, 126, 126);
+}
+sidebar li:active{
+    background-color: rgb(192, 192, 192);
+}
+.chats{
+    margin: 0;
+    padding: 0;
+    background-color: rgb(248, 248, 248);
+    list-style: none;
+}
+.chats.blur{
+    background-color: rgb(177, 177, 177);
+}
+.chats li div{
+    margin: 0;
+    margin-left: 5px;
+    display: flex;
+}
+.chats li div.self{
+    flex-direction: row-reverse;
+}
+.chats .name{
+    margin: 0;
+    padding: 5px;
+    font-size: 18px;
+}
+.chats .name.self{
+    display: none;
+}
+.chats .chat{
+    margin: 0;
+    padding: 7px 5px;
+    font-size: 16px;
+    font-style: italic;
+}
+.chats .chat.self{
+    padding: 7px 10px;
+    text-align: end;
+}
+.chats .time{
+    margin: 0;
+    padding: 5px 10px;
+    color: rgb(104, 104, 104);
+}
+.chats .time.self{
+    text-align: end;
+}
+.inputs{
+    margin: 0px;
+    background-color: rgb(194, 194, 194);
+    padding: 8px 10px;
+}
+.inputs form{
+    margin: 0px;
+    margin-bottom: 5px;
+}
+.inputs label{
+    font-size: 25px;
+    margin: 5px;
+    color: rgba(0, 0, 0, 0.7);
+}
+.inputs input{
+    font-size: 17px;
+    border-radius: 30px;
+    padding: 5px 10px;
+    margin: 5px;
+    border: 1px solid white;
+}
+.inputs input:focus{
+    outline: none;
+    border: 1.1px solid rgb(70, 70, 70);
+}
+.logs{
+    text-align: center;
+    font-size: 18px;
+    display: none;
+}
+.logs.active{
+    display: block;
+}
+@media screen and (min-width: 600px) {
+    header .hamburger-menu{
+        display: none;
+    }
+    header{
+        flex-direction: row-reverse;
+    }
+    .choose-room{
+        display: block;
+        position: relative;
+        padding: 16px 65px;
+    }
+    sidebar ul{
+        position: relative;
+        display: block;
+    }
+    sidebar li{
+        padding: 5px 30px;
+    }
+    main{
+        display: flex;
+    }
+    .chat{
+        width: 100%;
+    }
+    .inputs{
+        padding: 8px 20px;
+    }
+}

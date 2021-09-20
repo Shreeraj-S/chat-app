@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./style.css">
+    <title>Document</title>
+</head>
+<body>
+    <header>
+        <h2 class="hamburger-menu">☰</h2>
+        <h1>Chat App</h1>
+        <p class="choose-room">Choose a room</p>
+    </header>
+    <main>
+        <sidebar>
+            <ul class="rooms">
+                <li>Default</li>
+                <li>Loki</li>
+                <li>Wandavision</li>
+                <li>What if?..</li>
+            </ul>
+        </sidebar>
+        <section class="chat">
+            <ul class="chats"></ul>
+        </section>
+        <div class="inputs">
+            <form class="message">
+                <label for="message">Message: </label>
+                <input type="text" name="message" placeholder="Enter a message">
+            </form>
+            <form class="name-form">
+                <label for="name">Name: </label>
+                <input type="text" name="name" placeholder="Enter your name">
+            </form>
+            <div class="logs">
+                <p></p>
+            </div>
+        </div>
+    </main>
+
+    <script src="./bundle.js" ></script>
+</body>
+</html>
