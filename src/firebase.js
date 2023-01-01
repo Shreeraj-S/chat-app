@@ -4,12 +4,12 @@ import { getFirestore, collection, addDoc , onSnapshot, query, where, orderBy} f
 
 // Your web app's Firebase configuration
 const firebaseConfig = {
-    apiKey: "AIzaSyD1KbfkSbg5ai2BjhAHupSefhfgy16KAt0",
-    authDomain: "realtime-chat-app-abd88.firebaseapp.com",
-    projectId: "realtime-chat-app-abd88",
-    storageBucket: "realtime-chat-app-abd88.appspot.com",
-    messagingSenderId: "619869792637",
-    appId: "1:619869792637:web:8aae852319b5c634950414"
+    apiKey: "AIzaSyAG70XMswSUeOuEEhOOX8ayEaaOHJwpiH4",
+    authDomain: "vanilla-chat-app.firebaseapp.com",
+    projectId: "vanilla-chat-app",
+    storageBucket: "vanilla-chat-app.appspot.com",
+    messagingSenderId: "923804990702",
+    appId: "1:923804990702:web:2bb180f564d4903882c7ff"
   };
 
 // Initialize Firebase
